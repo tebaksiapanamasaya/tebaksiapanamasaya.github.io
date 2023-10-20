@@ -1,0 +1,111 @@
+/*Meng-Import Font dari Google Font */
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
+
+/* Setting up the body element */
+  body {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+
+    /*scrolling */
+    /* Scrolling Horizontal disembunyikan*/
+    overflow-x: hidden;
+    
+    /* Jika ingin menggunakan warna sebagai background element */
+    /* Gunakan properti background-colour */
+    background-color: #17141F;
+
+    /* Jika  Ingin menggunakan gambar sebagai background  */
+    /* Gunakan properti background-image  */
+    background-image: url(asset/background.png);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
+
+    /* Mengatur tata letak element dengan flexbox */
+    /* Posisi Element: tengah */
+    display: flex;
+    align-items: center;
+    flex-direction: column
+}
+
+
+/* Set the Container style */
+.container {
+  /* Set width  of the container */
+  width: 91%;
+  max-width: 680px;
+  margin: 10px;
+  padding: 50px 0px 100px 0px;
+
+  /* mengatur tata letak element dengan flexbox  */
+  /* Posisi element: Tengah */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* set the profile image */
+.img-container img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+/* set the title and description */
+.title-container{
+  /* Tata letak */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+  text-align: center;
+
+  /* Warna Text Heading dan Description */
+  color: #E6C62F;
+}
+
+  /* Set the Link Item Elements  */
+  .link-item{
+    width: 100%;
+    height: 56px;
+    margin: 16px;
+    border-radius: 20px;
+
+    /* Text color and background color */
+    background-color: rgb(37,37,37);
+    text-decoration: none;
+    color: #E6C62F;
+
+    /* tata letak */
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* set the icons */
+  .icons {
+    margin: 3px 8px;
+    width: 44px;
+    height: 44px;
+  }
+
+  /* Coba ke tengahin dikit hehe */
+  .link-item p {
+    margin-right: 60px;
+  }
+
+  /* Apa yang akan terjadi jika mause berada diatas element */
+  /* itulah yang disebut dengan sifat hover */
+  .link-item:hover {
+    transition: cubic-bezier(.07, 1.41, .82, 1.41) 0.2s;
+    transform: scale(1.02);
+    
+    background-color: rgb(72, 66, 66);
+
+    /* kecepatan transisi */
+  }
+
