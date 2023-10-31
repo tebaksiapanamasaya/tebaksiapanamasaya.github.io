@@ -19,7 +19,7 @@
 
     /* Jika  Ingin menggunakan gambar sebagai background  */
     /* Gunakan properti background-image  */
-    background-image: url(asset/background.png);
+    background-image: url(Asset/background.png);
 
     background-size: cover;
     background-repeat: no-repeat;
